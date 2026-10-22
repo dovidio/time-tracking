@@ -117,13 +117,30 @@ the one thing it never does: when you can leave.`
 
 **What's New**: `First release.`
 
-## 8. Build and upload
+## 8. Signing, build and upload
 
-1. Bump `CURRENT_PROJECT_VERSION` in `project.yml` (e.g. `"2"`), then
+1. **Create an Apple Distribution certificate**: Xcode → Settings → Accounts →
+   select your team → **Manage Certificates… → + → Apple Distribution**.
+   Without it, archiving for the App Store fails.
+2. Bump `CURRENT_PROJECT_VERSION` in `project.yml` (e.g. `"2"`), then
    `xcodegen generate`.
-2. In Xcode select **Any iOS Device (arm64)** → **Product → Archive**.
-3. Organizer → **Distribute App → App Store Connect → Upload**.
-4. Wait for the build to appear in App Store Connect (usually 5–15 minutes).
+3. Build the IPA with the script:
+
+   ```bash
+   TEAM_ID=XXXXXXXXXX Scripts/archive.sh
+   ```
+
+   It archives with `-allowProvisioningUpdates` and exports to `build/export/`.
+4. Upload with **Xcode → Window → Organizer → Distribute App → App Store
+   Connect → Upload**, or with an App Store Connect API key
+   (Users and Access → Integrations):
+
+   ```bash
+   xcrun altool --upload-app -f build/export/TimeTracker.ipa -t ios \
+     --apiKey <KEY_ID> --apiIssuer <ISSUER_ID>
+   ```
+
+5. Wait for the build to appear in App Store Connect (usually 5–15 minutes).
 
 ## 9. TestFlight first
 
