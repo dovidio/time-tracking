@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1024" height="1024" viewBox="0 0 1024 1024">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#03050B"/>
+      <stop offset="0.55" stop-color="#0A1226"/>
+      <stop offset="1" stop-color="#101C3A"/>
+    </linearGradient>
+    <radialGradient id="glow" cx="0.28" cy="0.18" r="0.85">
+      <stop offset="0" stop-color="#FFFFFF" stop-opacity="0.10"/>
+      <stop offset="1" stop-color="#FFFFFF" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+
+  <rect width="1024" height="1024" fill="url(#bg)"/>
+  <rect width="1024" height="1024" fill="url(#glow)"/>
+
+  <circle cx="512" cy="512" r="300" fill="none" stroke="#FFFFFF" stroke-opacity="0.10" stroke-width="56"/>
+
+  <path d="M 512 212 A 300 300 0 1 1 222.2 589.6"
+        fill="none" stroke="#30D158" stroke-width="56" stroke-linecap="round"/>
+
+  <line x1="512" y1="512" x2="382.1" y2="437" stroke="#FFFFFF" stroke-width="34" stroke-linecap="round"/>
+  <line x1="512" y1="512" x2="693.9" y2="407" stroke="#FFFFFF" stroke-width="34" stroke-linecap="round"/>
+  <circle cx="512" cy="512" r="26" fill="#FFFFFF"/>
+</svg>

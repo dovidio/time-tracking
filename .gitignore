@@ -1,0 +1,16 @@
+# Build products
+.build/
+DerivedData/
+*.xcuserstate
+xcuserdata/
+*.xcresult
+
+# Local caches used when building inside restricted environments
+.home/
+.tmp/
+
+# Personal data — never commit
+taps.log
+*.log
+
+.DS_Store

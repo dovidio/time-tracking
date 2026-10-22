@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1024" height="1024" viewBox="0 0 1024 1024">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#0B1220"/>
+      <stop offset="0.5" stop-color="#142C6E"/>
+      <stop offset="1" stop-color="#1D4ED8"/>
+    </linearGradient>
+    <radialGradient id="glow" cx="0.28" cy="0.18" r="0.85">
+      <stop offset="0" stop-color="#FFFFFF" stop-opacity="0.16"/>
+      <stop offset="1" stop-color="#FFFFFF" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+
+  <rect width="1024" height="1024" fill="url(#bg)"/>
+  <rect width="1024" height="1024" fill="url(#glow)"/>
+
+  <!-- target ring -->
+  <circle cx="512" cy="512" r="300" fill="none" stroke="#FFFFFF" stroke-opacity="0.14" stroke-width="56"/>
+
+  <!-- worked time, 255 degrees from twelve -->
+  <path d="M 512 212 A 300 300 0 1 1 222.2 589.6"
+        fill="none" stroke="#34D399" stroke-width="56" stroke-linecap="round"/>
+
+  <!-- hands at ten past ten -->
+  <line x1="512" y1="512" x2="382.1" y2="437" stroke="#F8FAFC" stroke-width="34" stroke-linecap="round"/>
+  <line x1="512" y1="512" x2="693.9" y2="407" stroke="#F8FAFC" stroke-width="34" stroke-linecap="round"/>
+  <circle cx="512" cy="512" r="26" fill="#F8FAFC"/>
+</svg>
