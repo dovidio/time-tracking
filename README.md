@@ -18,6 +18,16 @@ server, no network.
 - [XcodeGen](https://github.com/yonaskolb/XcodeGen): `brew install xcodegen`
 - If Xcode says the iOS platform is missing: **Xcode → Settings → Components → iOS**
 
+## Don't have a Mac?
+
+This repository is the source. Building and installing it requires a Mac with
+Xcode.
+
+The installable versions are distributed through **TestFlight** and the
+**App Store**, neither of which needs a Mac on the installer's side — but a
+build has to be uploaded from a Mac first. No public build exists yet; when one
+does, the links will be here. The app requires **iOS 17 or later**.
+
 ## Build
 
 ```bash
