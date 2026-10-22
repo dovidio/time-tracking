@@ -111,6 +111,8 @@ cd TimeCore && swift test
 36 tests cover parsing, undo, the toggle, lunch deduction, overrides, balances
 and rounding.
 
+Release checklist: [docs/APPSTORE.md](docs/APPSTORE.md).
+
 ## License
 
 MIT — see [LICENSE](LICENSE).

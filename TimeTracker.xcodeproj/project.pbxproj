@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		19888937C7033DF41189A3F0 /* PrivacyInfo.xcprivacy in Resources */ = {isa = PBXBuildFile; fileRef = CC5BAF33E68FF3B5CDD081EB /* PrivacyInfo.xcprivacy */; };
 		258D5FB8547AAE3C1AB247F2 /* AppIntents.swift in Sources */ = {isa = PBXBuildFile; fileRef = 651544A7E607F78111B350DC /* AppIntents.swift */; };
 		2C33773E5351A9CE869ECF59 /* HistoryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EED609C0C867BB844C70DA55 /* HistoryView.swift */; };
 		306C69DB9BC5B6EE9D50D55B /* LogStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 446CCB9F7373CD8556732A8C /* LogStore.swift */; };
@@ -45,6 +46,7 @@
 		B173286388839F33C3FAA564 /* TimeTrackerApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeTrackerApp.swift; sourceTree = "<group>"; };
 		BAD78B199A14A9E6F58144D9 /* RootView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootView.swift; sourceTree = "<group>"; };
 		CB98C1827CCF777F17B171DB /* EventLog.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventLog.swift; sourceTree = "<group>"; };
+		CC5BAF33E68FF3B5CDD081EB /* PrivacyInfo.xcprivacy */ = {isa = PBXFileReference; path = PrivacyInfo.xcprivacy; sourceTree = "<group>"; };
 		D748C37BD041AAB41F6707C3 /* Components.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Components.swift; sourceTree = "<group>"; };
 		E221A5B8B476CD83305B0F8E /* TodayView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodayView.swift; sourceTree = "<group>"; };
 		E5E6C3CF40AA1A1ED7E12EEF /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
@@ -83,6 +85,7 @@
 				943B4D377432DA396308BDAB /* Assets.xcassets */,
 				12E31815FE137361F4855933 /* Info.plist */,
 				446CCB9F7373CD8556732A8C /* LogStore.swift */,
+				CC5BAF33E68FF3B5CDD081EB /* PrivacyInfo.xcprivacy */,
 				1D2BA4F96EADE0083631525A /* StampWriter.swift */,
 				B173286388839F33C3FAA564 /* TimeTrackerApp.swift */,
 				DE45CD831E519A4C64683C04 /* Views */,
@@ -188,6 +191,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				ED0CD3B09DB0CF5AB40932D3 /* Assets.xcassets in Resources */,
+				19888937C7033DF41189A3F0 /* PrivacyInfo.xcprivacy in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
