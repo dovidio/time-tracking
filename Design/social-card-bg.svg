@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="640" viewBox="0 0 1280 640">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#0B1220"/>
+      <stop offset="0.55" stop-color="#142C6E"/>
+      <stop offset="1" stop-color="#1D4ED8"/>
+    </linearGradient>
+    <radialGradient id="glow" cx="0.18" cy="0.12" r="0.8">
+      <stop offset="0" stop-color="#FFFFFF" stop-opacity="0.14"/>
+      <stop offset="1" stop-color="#FFFFFF" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+
+  <rect width="1280" height="640" fill="url(#bg)"/>
+  <rect width="1280" height="640" fill="url(#glow)"/>
+
+  <text x="220" y="158" font-family="Helvetica Neue, Helvetica, Arial, sans-serif" font-size="58" font-weight="700" letter-spacing="-1.5" fill="#FFFFFF">TimeTracker</text>
+  <text x="80" y="248" font-family="Helvetica Neue, Helvetica, Arial, sans-serif" font-size="32" font-weight="600" fill="#D9E4FF">Know when you can leave.</text>
+  <text x="80" y="290" font-family="Helvetica Neue, Helvetica, Arial, sans-serif" font-size="19" fill="#9FB4E6">A private hours ledger for badge terminals.</text>
+
+  <rect x="80" y="322" width="78" height="32" rx="16" fill="#FFFFFF" fill-opacity="0.10"/>
+  <text x="119" y="343" text-anchor="middle" font-family="Helvetica Neue, Helvetica, Arial, sans-serif" font-size="13" font-weight="600" fill="#C9D8FF">iOS 17+</text>
+  <rect x="168" y="322" width="96" height="32" rx="16" fill="#FFFFFF" fill-opacity="0.10"/>
+  <text x="216" y="343" text-anchor="middle" font-family="Helvetica Neue, Helvetica, Arial, sans-serif" font-size="13" font-weight="600" fill="#C9D8FF">Local only</text>
+  <rect x="274" y="322" width="104" height="32" rx="16" fill="#FFFFFF" fill-opacity="0.10"/>
+  <text x="326" y="343" text-anchor="middle" font-family="Helvetica Neue, Helvetica, Arial, sans-serif" font-size="13" font-weight="600" fill="#C9D8FF">No account</text>
+
+  <text x="80" y="392" font-family="Helvetica Neue, Helvetica, Arial, sans-serif" font-size="18" fill="#8FA7DA">One tap · four stamps · one honest balance</text>
+  <text x="80" y="580" font-family="Helvetica Neue, Helvetica, Arial, sans-serif" font-size="18" fill="#8FA7DA">github.com/dovidio/time-tracking</text>
+
+  <rect x="958" y="52" width="258" height="560" rx="30" fill="#000000" fill-opacity="0.28"/>
+</svg>

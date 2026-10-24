@@ -8,7 +8,7 @@
 <meta name="theme-color" content="#F2F2F7">
 <meta property="og:title" content="TimeTracker">
 <meta property="og:description" content="A private iPhone hours ledger. One tap, four stamps, one honest balance.">
-<meta property="og:image" content="https://dovidio.github.io/time-tracking/assets/icon.png">
+<meta property="og:image" content="https://dovidio.github.io/time-tracking/assets/social-card.png">
 <meta property="og:type" content="website">
 <style>
   :root{
@@ -38,8 +38,8 @@
   .btn{display:inline-block; background:var(--blue); color:#fff; font-weight:600; padding:12px 20px; border-radius:14px; font-size:15px}
   .btn:hover{text-decoration:none; filter:brightness(1.05)}
   .btn.ghost{background:var(--card); color:var(--ink); border:1px solid var(--line)}
-  .shots{display:flex; gap:26px; justify-content:center; align-items:flex-start; padding:40px 0 10px; flex-wrap:wrap}
-  .shots figure{margin:0; text-align:center; width:250px}
+  .shots{display:grid; grid-template-columns:repeat(4,1fr); gap:18px; padding:40px 0 10px}
+  .shots figure{margin:0; text-align:center}
   .shots img{width:100%; border-radius:30px; border:1px solid rgba(0,0,0,.08); box-shadow:0 24px 50px rgba(15,23,42,.16); display:block}
   .shots figcaption{margin-top:12px; font-size:13px; color:var(--muted); font-weight:600}
   section{padding:34px 0}
@@ -67,6 +67,7 @@
   @media (max-width:820px){
     .steps,.features{grid-template-columns:1fr 1fr}
     .install{grid-template-columns:1fr}
+    .shots{grid-template-columns:repeat(2,1fr)}
   }
   @media (max-width:560px){
     .steps,.features{grid-template-columns:1fr}
@@ -99,6 +100,8 @@
     <section class="shots">
       <figure><img src="assets/today.png" alt="Today screen with worked time, progress ring and leave time"><figcaption>Today</figcaption></figure>
       <figure><img src="assets/history.png" alt="History screen with weekly and monthly balances"><figcaption>History</figcaption></figure>
+      <figure><img src="assets/day-editor.png" alt="Editing the stamps of a day"><figcaption>Fix a day</figcaption></figure>
+      <figure><img src="assets/settings.png" alt="Contract, rounding and lunch settings"><figcaption>Settings</figcaption></figure>
     </section>
 
     <section id="how">

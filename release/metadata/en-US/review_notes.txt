@@ -1,0 +1,3 @@
+No account or login. Tap the large button to record a stamp; tap again to toggle out. The pencil button edits a day. Settings configures weekly hours, working days and the standard lunch.
+
+The app is an independent personal ledger. It does not connect to any employer system or badge hardware. The "Stamp" App Intent can be added to a Shortcut for Back Tap.

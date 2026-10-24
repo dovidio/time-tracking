@@ -1,0 +1,90 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="390" height="844" viewBox="0 0 390 844">
+  <style>
+    text { font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; }
+    .nav { font-size: 17px; font-weight: 600; fill: #000; }
+    .action { font-size: 17px; fill: #007AFF; }
+    .section { font-size: 11px; font-weight: 600; fill: #6D6D72; letter-spacing: 0.4px; }
+    .label { font-size: 15px; fill: #000; }
+    .time { font-size: 15px; fill: #000; }
+    .note { font-size: 15px; fill: #000; }
+    .status { font-size: 15px; font-weight: 600; }
+  </style>
+
+  <rect width="390" height="844" fill="#F2F2F7"/>
+
+  <!-- status bar -->
+  <text x="28" y="34" class="status" fill="#000">9:41</text>
+  <g fill="#000">
+    <rect x="294" y="27" width="3" height="4" rx="1"/>
+    <rect x="299" y="25" width="3" height="6" rx="1"/>
+    <rect x="304" y="23" width="3" height="8" rx="1"/>
+    <rect x="309" y="21" width="3" height="10" rx="1"/>
+  </g>
+  <g fill="none" stroke="#000" stroke-width="1.6" stroke-linecap="round">
+    <path d="M 322 27 A 9 9 0 0 1 336 27"/>
+    <path d="M 325.5 30.5 A 6 6 0 0 1 332.5 30.5"/>
+  </g>
+  <circle cx="329" cy="33.5" r="1.2" fill="#000"/>
+  <rect x="345" y="22" width="23" height="12" rx="3.5" fill="none" stroke="#000" stroke-opacity="0.4" stroke-width="1"/>
+  <rect x="347" y="24" width="17" height="8" rx="2" fill="#000"/>
+  <rect x="369" y="26" width="2" height="4" rx="1" fill="#000" fill-opacity="0.4"/>
+
+  <!-- nav bar -->
+  <rect x="0" y="44" width="390" height="52" fill="#F9F9F9"/>
+  <line x1="0" y1="96" x2="390" y2="96" stroke="#E5E5EA" stroke-width="1"/>
+  <text x="20" y="76" class="action">Cancel</text>
+  <text x="195" y="76" text-anchor="middle" class="nav">Thursday 22 October</text>
+  <text x="370" y="76" text-anchor="end" class="action" font-weight="600">Save</text>
+
+  <!-- stamps -->
+  <text x="32" y="128" class="section">STAMPS</text>
+  <rect x="16" y="138" width="358" height="222" rx="20" fill="#FFFFFF"/>
+
+  <text x="32" y="172" class="label">In</text>
+  <rect x="238" y="150" width="76" height="30" rx="8" fill="#F2F2F7"/>
+  <text x="276" y="170" text-anchor="middle" class="time">08:28</text>
+  <g fill="none" stroke="#FF3B30" stroke-width="1.5" stroke-linecap="round">
+    <path d="M 333 160 h 12 M 335 160 v 12 h 8 v -12 M 337 157 h 4"/>
+  </g>
+  <line x1="32" y1="192" x2="358" y2="192" stroke="#E5E5EA" stroke-width="1"/>
+
+  <text x="32" y="214" class="label">Lunch out</text>
+  <rect x="238" y="192" width="76" height="30" rx="8" fill="#F2F2F7"/>
+  <text x="276" y="212" text-anchor="middle" class="time">12:31</text>
+  <g fill="none" stroke="#FF3B30" stroke-width="1.5" stroke-linecap="round">
+    <path d="M 333 202 h 12 M 335 202 v 12 h 8 v -12 M 337 199 h 4"/>
+  </g>
+  <line x1="32" y1="234" x2="358" y2="234" stroke="#E5E5EA" stroke-width="1"/>
+
+  <text x="32" y="256" class="label">Back in</text>
+  <rect x="238" y="234" width="76" height="30" rx="8" fill="#F2F2F7"/>
+  <text x="276" y="254" text-anchor="middle" class="time">13:14</text>
+  <g fill="none" stroke="#FF3B30" stroke-width="1.5" stroke-linecap="round">
+    <path d="M 333 244 h 12 M 335 244 v 12 h 8 v -12 M 337 241 h 4"/>
+  </g>
+  <line x1="32" y1="276" x2="358" y2="276" stroke="#E5E5EA" stroke-width="1"/>
+
+  <text x="32" y="298" class="label">Out</text>
+  <rect x="238" y="276" width="76" height="30" rx="8" fill="#F2F2F7"/>
+  <text x="276" y="296" text-anchor="middle" class="time">17:20</text>
+  <g fill="none" stroke="#FF3B30" stroke-width="1.5" stroke-linecap="round">
+    <path d="M 333 286 h 12 M 335 286 v 12 h 8 v -12 M 337 283 h 4"/>
+  </g>
+  <line x1="32" y1="318" x2="358" y2="318" stroke="#E5E5EA" stroke-width="1"/>
+
+  <circle cx="38" cy="339" r="8" fill="none" stroke="#007AFF" stroke-width="1.8"/>
+  <path d="M 38 335 v 8 M 34 339 h 8" stroke="#007AFF" stroke-width="1.8" stroke-linecap="round"/>
+  <text x="56" y="345" font-size="15" fill="#007AFF">Add stamp</text>
+
+  <!-- note -->
+  <text x="32" y="392" class="section">NOTE</text>
+  <rect x="16" y="402" width="358" height="86" rx="20" fill="#FFFFFF"/>
+  <text x="32" y="434" class="note">forgot the evening tap</text>
+  <text x="32" y="458" font-size="13" fill="#8E8E93">Saved with the correction, not as a stamp.</text>
+
+  <!-- revert -->
+  <rect x="16" y="510" width="358" height="52" rx="20" fill="#FFFFFF"/>
+  <text x="195" y="542" text-anchor="middle" font-size="15" font-weight="500" fill="#FF3B30">Revert to recorded stamps</text>
+
+  <rect x="128" y="830" width="134" height="5" rx="2.5" fill="#000"/>
+</svg>

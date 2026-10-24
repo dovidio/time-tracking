@@ -1,0 +1,115 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="390" height="844" viewBox="0 0 390 844">
+  <style>
+    text { font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; }
+    .title { font-size: 34px; font-weight: 700; letter-spacing: -0.6px; }
+    .section { font-size: 11px; font-weight: 600; fill: #6D6D72; letter-spacing: 0.4px; }
+    .label { font-size: 15px; fill: #000; }
+    .value { font-size: 15px; fill: #8E8E93; }
+    .foot { font-size: 12px; fill: #8E8E93; }
+    .tab { font-size: 10px; font-weight: 500; }
+    .status { font-size: 15px; font-weight: 600; }
+  </style>
+
+  <rect width="390" height="844" fill="#F2F2F7"/>
+
+  <!-- status bar -->
+  <text x="28" y="34" class="status" fill="#000">9:41</text>
+  <g fill="#000">
+    <rect x="294" y="27" width="3" height="4" rx="1"/>
+    <rect x="299" y="25" width="3" height="6" rx="1"/>
+    <rect x="304" y="23" width="3" height="8" rx="1"/>
+    <rect x="309" y="21" width="3" height="10" rx="1"/>
+  </g>
+  <g fill="none" stroke="#000" stroke-width="1.6" stroke-linecap="round">
+    <path d="M 322 27 A 9 9 0 0 1 336 27"/>
+    <path d="M 325.5 30.5 A 6 6 0 0 1 332.5 30.5"/>
+  </g>
+  <circle cx="329" cy="33.5" r="1.2" fill="#000"/>
+  <rect x="345" y="22" width="23" height="12" rx="3.5" fill="none" stroke="#000" stroke-opacity="0.4" stroke-width="1"/>
+  <rect x="347" y="24" width="17" height="8" rx="2" fill="#000"/>
+  <rect x="369" y="26" width="2" height="4" rx="1" fill="#000" fill-opacity="0.4"/>
+
+  <text x="20" y="98" class="title" fill="#000">Settings</text>
+
+  <!-- contract -->
+  <text x="32" y="136" class="section">CONTRACT</text>
+  <rect x="16" y="146" width="358" height="286" rx="20" fill="#FFFFFF"/>
+
+  <text x="32" y="180" class="label">Weekly hours</text>
+  <text x="358" y="180" text-anchor="end" class="value">42.0 h</text>
+  <line x1="32" y1="196" x2="358" y2="196" stroke="#E5E5EA" stroke-width="1"/>
+
+  <text x="32" y="226" class="label">Monday</text>
+  <rect x="306" y="208" width="51" height="31" rx="15.5" fill="#34C759"/>
+  <circle cx="342" cy="223.5" r="13" fill="#FFFFFF"/>
+  <line x1="32" y1="246" x2="358" y2="246" stroke="#E5E5EA" stroke-width="1"/>
+
+  <text x="32" y="266" class="label">Tuesday</text>
+  <rect x="306" y="248" width="51" height="31" rx="15.5" fill="#34C759"/>
+  <circle cx="342" cy="263.5" r="13" fill="#FFFFFF"/>
+  <line x1="32" y1="286" x2="358" y2="286" stroke="#E5E5EA" stroke-width="1"/>
+
+  <text x="32" y="306" class="label">Wednesday</text>
+  <rect x="306" y="288" width="51" height="31" rx="15.5" fill="#34C759"/>
+  <circle cx="342" cy="303.5" r="13" fill="#FFFFFF"/>
+  <line x1="32" y1="326" x2="358" y2="326" stroke="#E5E5EA" stroke-width="1"/>
+
+  <text x="32" y="346" class="label">Thursday</text>
+  <rect x="306" y="328" width="51" height="31" rx="15.5" fill="#34C759"/>
+  <circle cx="342" cy="343.5" r="13" fill="#FFFFFF"/>
+  <line x1="32" y1="366" x2="358" y2="366" stroke="#E5E5EA" stroke-width="1"/>
+
+  <text x="32" y="386" class="label">Friday</text>
+  <rect x="306" y="368" width="51" height="31" rx="15.5" fill="#34C759"/>
+  <circle cx="342" cy="383.5" r="13" fill="#FFFFFF"/>
+
+  <!-- rounding -->
+  <text x="32" y="466" class="section">ROUNDING</text>
+  <rect x="16" y="476" width="358" height="52" rx="20" fill="#FFFFFF"/>
+  <text x="32" y="508" class="label">Round punches</text>
+  <text x="346" y="508" text-anchor="end" class="value">Off</text>
+  <path d="M 356 502 l 5 5 l -5 5" fill="none" stroke="#C7C7CC" stroke-width="2"/>
+
+  <!-- lunch -->
+  <text x="32" y="560" class="section">LUNCH</text>
+  <rect x="16" y="570" width="358" height="52" rx="20" fill="#FFFFFF"/>
+  <text x="32" y="602" class="label">Standard lunch</text>
+  <text x="346" y="602" text-anchor="end" class="value">60 minutes</text>
+  <path d="M 356 596 l 5 5 l -5 5" fill="none" stroke="#C7C7CC" stroke-width="2"/>
+  <text x="32" y="642" class="foot">Deducted on working days where you recorded no break.</text>
+  <text x="32" y="660" class="foot">A real break takes precedence.</text>
+
+  <!-- data -->
+  <text x="32" y="694" class="section">DATA</text>
+  <rect x="16" y="704" width="358" height="52" rx="20" fill="#FFFFFF"/>
+  <text x="32" y="736" class="label">Export taps.log</text>
+  <g fill="none" stroke="#007AFF" stroke-width="1.8" stroke-linecap="round">
+    <path d="M 340 730 v -8 h 14 v 8 M 347 722 v 14 M 341 729 l 6 -6 6 6"/>
+  </g>
+
+  <!-- tab bar -->
+  <rect x="0" y="768" width="390" height="76" fill="#F9F9F9"/>
+  <line x1="0" y1="768" x2="390" y2="768" stroke="#E5E5EA" stroke-width="1"/>
+
+  <g fill="none" stroke="#8E8E93" stroke-width="1.8" stroke-linecap="round">
+    <circle cx="65" cy="792" r="8"/>
+    <path d="M 65 787 v 5 l 3 2"/>
+  </g>
+  <text x="65" y="816" text-anchor="middle" class="tab" fill="#8E8E93">Today</text>
+
+  <g fill="none" stroke="#8E8E93" stroke-width="1.8" stroke-linecap="round">
+    <rect x="187" y="784" width="16" height="14" rx="3"/>
+    <path d="M 187 789 h 16 M 191 782 v 4 M 199 782 v 4"/>
+  </g>
+  <text x="195" y="816" text-anchor="middle" class="tab" fill="#8E8E93">History</text>
+
+  <g fill="none" stroke="#007AFF" stroke-width="1.8" stroke-linecap="round">
+    <path d="M 318 786 h 14 M 318 792 h 14 M 318 798 h 14"/>
+    <circle cx="323" cy="786" r="2" fill="#F9F9F9"/>
+    <circle cx="329" cy="792" r="2" fill="#F9F9F9"/>
+    <circle cx="321" cy="798" r="2" fill="#F9F9F9"/>
+  </g>
+  <text x="325" y="816" text-anchor="middle" class="tab" fill="#007AFF">Settings</text>
+
+  <rect x="128" y="830" width="134" height="5" rx="2.5" fill="#000"/>
+</svg>

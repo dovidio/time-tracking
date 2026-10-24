@@ -1,0 +1,1 @@
+A local hours ledger that mirrors your badge terminal's toggle and tells you the one thing it never does: when you can leave.

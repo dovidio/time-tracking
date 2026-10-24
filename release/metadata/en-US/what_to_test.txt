@@ -1,0 +1,5 @@
+1. Tap the big button: the state should switch to "Working since …" and show a Leave at time.
+2. Tap again to go on break, twice more to close the day. Today and History balances should update.
+3. Open the pencil on Today, delete a stamp, tap Save. The day should show the corrected time with a pencil mark.
+4. Settings → Standard lunch → 60 minutes. A two-stamp day (in/out, no lunch stamps) should show a one-hour deduction.
+5. Add the "Stamp" action to a Shortcut, assign it to Back Tap, and confirm the stamp appears in the app whether it is open or closed.

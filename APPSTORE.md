@@ -19,7 +19,8 @@ it is account setup, metadata, screenshots, and review.
 in App Store Connect must be unique, but the name on the home screen does not:
 `CFBundleDisplayName` can stay `TimeTracker`.
 
-Pick a unique store name, for example:
+The proposal is **Badge Hours**; alternatives and the reasoning are in
+[`release/metadata/en-US/name-options.md`](release/metadata/en-US/name-options.md):
 
 - `Badge Hours`
 - `Punch Ledger`
@@ -39,6 +40,8 @@ app record; it also reserves the name for 90 days once you do.
 - [x] Privacy policy (`PRIVACY.md`).
 - [x] App is iPhone-only, portrait, iOS 17+, no login, no third-party SDKs.
 - [x] Engine covered by tests (`cd TimeCore && swift test`, 36 tests).
+- [x] Release assets in [`release/`](release/): screenshots, icon, social card,
+      and paste-ready metadata (`release/metadata/en-US/`).
 
 ## 3. Create the app record
 
@@ -72,23 +75,25 @@ network requests. No tracking. No third-party SDKs, so no SDK manifests.
 
 ## 6. Screenshots
 
-Apple currently requires the **6.9-inch** set (1320 × 2868). Smaller sizes are
-optional once the 6.9-inch set exists; App Store Connect will show the exact
-slots.
+Apple requires the **6.9-inch** set (1320 × 2868); the 6.5-inch set (1284 ×
+2778) is optional.
 
-Take 4 screenshots on an iPhone 16 Pro Max simulator (or a 6.9-inch device):
+Prepared in `release/screenshots/`:
 
-1. **Today** with a completed day and a visible *Leave at* time.
-2. **History** showing a week of balances.
-3. **Day editor** showing a correction.
-4. **Settings → Lunch / Contract** showing the configuration.
+1. `6.9-inch/01-today.png` — worked time, progress ring, leave time.
+2. `6.9-inch/02-history.png` — week and month balances.
+3. `6.9-inch/03-day-editor.png` — correcting a day.
+4. `6.9-inch/04-settings.png` — contract, rounding, lunch.
 
-Ideas for captions (add them in the image, not required by Apple):
-*"One tap, four stamps, one honest balance."* ·
-*"Know the exact minute you can leave."* ·
-*"Fix a forgotten tap without lying to yourself."*
+Upload in numeric order. These are **interface renders** from `Design/screens/`,
+not simulator captures. They follow the app's layout, but Apple wants screenshots
+of the running app — if you can capture the four screens on a 6.9-inch device or
+simulator, use those instead.
 
 ## 7. Version information
+
+All strings are in `release/metadata/en-US/`; paste each file into the matching
+App Store Connect field.
 
 **Description** (draft — keep it factual, no employer or vendor names):
 

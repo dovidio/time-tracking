@@ -1,0 +1,14 @@
+A private hours ledger for people whose badge terminal records time but never shows them a balance.
+
+One tap logs a stamp. The app mirrors the terminal's in/out toggle, so four taps become: in, lunch out, back in, out. It then calculates worked time, your daily target, the week and month balance, and the time you can leave.
+
+• One-tap recording, from the app or a Back Tap Shortcut
+• Automatic in/out/lunch handling from the order of your stamps
+• Optional standard lunch, with real breaks taking precedence
+• Week and month balances, overtime and shortfall at a glance
+• Manual day corrections, with the original taps kept in the log
+• Everything stored locally in a plain text file you can export
+
+No account, no ads, no analytics, no network.
+
+TimeTracker is an independent project and is not affiliated with any badge or terminal vendor.
