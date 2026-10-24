@@ -53,7 +53,10 @@ wired in `docs/index.html`).
 | `release_notes.txt` | What's New |
 | `review_notes.txt` | App Review notes |
 | `what_to_test.txt` | TestFlight "What to Test" |
+| `beta_description.txt` | TestFlight beta app description |
+| `feedback_email.txt` | TestFlight feedback email |
 | `category.txt` | Primary and secondary category |
+| `age_rating.txt` | Age rating |
 | `copyright.txt` | Copyright line |
 
 Uploading and signing are covered in [`../APPSTORE.md`](../APPSTORE.md).

@@ -52,6 +52,7 @@ magick "$TMP/bg.png" \
   -stroke '#FFFFFF2E' -strokewidth 1.5 -fill none -draw "roundrectangle 950,40 1208,600 30,30" \
   docs/assets/social-card.png
 
+magick docs/assets/social-card.png -background white -alpha remove -alpha off docs/assets/social-card.png
 cp docs/assets/social-card.png release/social-card.png
 
 echo "==> Done"
