@@ -1,0 +1,115 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="390" height="844" viewBox="0 0 390 844">
+  <style>
+    text { font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; }
+    .title { font-size: 34px; font-weight: 700; letter-spacing: -0.6px; }
+    .section { font-size: 11px; font-weight: 600; fill: #6D6D72; letter-spacing: 0.4px; }
+    .row-title { font-size: 15px; font-weight: 600; fill: #000; }
+    .row-sub { font-size: 12px; fill: #8E8E93; }
+    .pill { font-size: 11px; font-weight: 600; }
+    .stat { font-size: 15px; fill: #000; }
+    .stat-value { font-size: 15px; font-weight: 600; }
+    .tab { font-size: 10px; font-weight: 500; }
+    .status { font-size: 15px; font-weight: 600; }
+  </style>
+
+  <rect width="390" height="844" fill="#F2F2F7"/>
+
+  <!-- status bar -->
+  <text x="28" y="34" class="status" fill="#000">9:41</text>
+  <g fill="#000">
+    <rect x="294" y="27" width="3" height="4" rx="1"/>
+    <rect x="299" y="25" width="3" height="6" rx="1"/>
+    <rect x="304" y="23" width="3" height="8" rx="1"/>
+    <rect x="309" y="21" width="3" height="10" rx="1"/>
+  </g>
+  <g fill="none" stroke="#000" stroke-width="1.6" stroke-linecap="round">
+    <path d="M 322 27 A 9 9 0 0 1 336 27"/>
+    <path d="M 325.5 30.5 A 6 6 0 0 1 332.5 30.5"/>
+  </g>
+  <circle cx="329" cy="33.5" r="1.2" fill="#000"/>
+  <rect x="345" y="22" width="23" height="12" rx="3.5" fill="none" stroke="#000" stroke-opacity="0.4" stroke-width="1"/>
+  <rect x="347" y="24" width="17" height="8" rx="2" fill="#000"/>
+  <rect x="369" y="26" width="2" height="4" rx="1" fill="#000" fill-opacity="0.4"/>
+
+  <text x="20" y="98" class="title" fill="#000">History</text>
+
+  <!-- balance -->
+  <text x="32" y="136" class="section">BALANCE</text>
+  <rect x="16" y="146" width="358" height="96" rx="20" fill="#FFFFFF"/>
+  <text x="32" y="180" class="stat">This week</text>
+  <text x="358" y="180" text-anchor="end" class="stat-value" fill="#248A3D">+2h 10m</text>
+  <line x1="32" y1="196" x2="358" y2="196" stroke="#E5E5EA" stroke-width="1"/>
+  <text x="32" y="224" class="stat">This month</text>
+  <text x="358" y="224" text-anchor="end" class="stat-value" fill="#C1272D">−1h 05m</text>
+
+  <!-- days -->
+  <text x="32" y="278" class="section">DAYS</text>
+  <rect x="16" y="288" width="358" height="310" rx="20" fill="#FFFFFF"/>
+
+  <!-- row 1 -->
+  <text x="32" y="318" class="row-title">Thu 22 Oct</text>
+  <text x="32" y="337" class="row-sub">8h 30m · 4 stamps</text>
+  <rect x="286" y="304" width="58" height="24" rx="12" fill="#34C759" fill-opacity="0.16"/>
+  <text x="315" y="320" text-anchor="middle" class="pill" fill="#248A3D">+0h 30m</text>
+  <path d="M 362 311 l 5 5 l -5 5" fill="none" stroke="#C7C7CC" stroke-width="2"/>
+  <line x1="32" y1="350" x2="358" y2="350" stroke="#E5E5EA" stroke-width="1"/>
+
+  <!-- row 2 -->
+  <text x="32" y="380" class="row-title">Wed 21 Oct</text>
+  <text x="32" y="399" class="row-sub">7h 48m · 4 stamps</text>
+  <rect x="286" y="366" width="58" height="24" rx="12" fill="#FF3B30" fill-opacity="0.14"/>
+  <text x="315" y="382" text-anchor="middle" class="pill" fill="#C1272D">−0h 12m</text>
+  <path d="M 362 373 l 5 5 l -5 5" fill="none" stroke="#C7C7CC" stroke-width="2"/>
+  <line x1="32" y1="412" x2="358" y2="412" stroke="#E5E5EA" stroke-width="1"/>
+
+  <!-- row 3 -->
+  <text x="32" y="442" class="row-title">Tue 20 Oct</text>
+  <text x="32" y="461" class="row-sub">8h 12m · 4 stamps</text>
+  <rect x="286" y="428" width="58" height="24" rx="12" fill="#34C759" fill-opacity="0.16"/>
+  <text x="315" y="444" text-anchor="middle" class="pill" fill="#248A3D">+0h 12m</text>
+  <path d="M 362 435 l 5 5 l -5 5" fill="none" stroke="#C7C7CC" stroke-width="2"/>
+  <line x1="32" y1="474" x2="358" y2="474" stroke="#E5E5EA" stroke-width="1"/>
+
+  <!-- row 4 -->
+  <text x="32" y="504" class="row-title">Mon 19 Oct</text>
+  <text x="32" y="523" class="row-sub">8h 00m · 2 stamps</text>
+  <rect x="286" y="490" width="58" height="24" rx="12" fill="#8E8E93" fill-opacity="0.14"/>
+  <text x="315" y="506" text-anchor="middle" class="pill" fill="#6D6D72">0m</text>
+  <path d="M 362 497 l 5 5 l -5 5" fill="none" stroke="#C7C7CC" stroke-width="2"/>
+  <line x1="32" y1="536" x2="358" y2="536" stroke="#E5E5EA" stroke-width="1"/>
+
+  <!-- row 5 -->
+  <text x="32" y="566" class="row-title">Fri 18 Oct</text>
+  <text x="32" y="585" class="row-sub">6h 55m · 4 stamps</text>
+  <rect x="286" y="552" width="58" height="24" rx="12" fill="#FF3B30" fill-opacity="0.14"/>
+  <text x="315" y="568" text-anchor="middle" class="pill" fill="#C1272D">−1h 05m</text>
+  <path d="M 362 559 l 5 5 l -5 5" fill="none" stroke="#C7C7CC" stroke-width="2"/>
+  <path d="M 284 558 l 6 10 h -12 z" fill="#FF9500"/>
+  <text x="284" y="567" text-anchor="middle" font-size="7" font-weight="700" fill="#FFFFFF">!</text>
+
+  <!-- tab bar -->
+  <rect x="0" y="768" width="390" height="76" fill="#F9F9F9"/>
+  <line x1="0" y1="768" x2="390" y2="768" stroke="#E5E5EA" stroke-width="1"/>
+
+  <g fill="none" stroke="#8E8E93" stroke-width="1.8" stroke-linecap="round">
+    <circle cx="65" cy="792" r="8"/>
+    <path d="M 65 787 v 5 l 3 2"/>
+  </g>
+  <text x="65" y="816" text-anchor="middle" class="tab" fill="#8E8E93">Today</text>
+
+  <g fill="none" stroke="#007AFF" stroke-width="1.8" stroke-linecap="round">
+    <rect x="187" y="784" width="16" height="14" rx="3"/>
+    <path d="M 187 789 h 16 M 191 782 v 4 M 199 782 v 4"/>
+  </g>
+  <text x="195" y="816" text-anchor="middle" class="tab" fill="#007AFF">History</text>
+
+  <g fill="none" stroke="#8E8E93" stroke-width="1.8" stroke-linecap="round">
+    <path d="M 318 786 h 14 M 318 792 h 14 M 318 798 h 14"/>
+    <circle cx="323" cy="786" r="2" fill="#F9F9F9"/>
+    <circle cx="329" cy="792" r="2" fill="#F9F9F9"/>
+    <circle cx="321" cy="798" r="2" fill="#F9F9F9"/>
+  </g>
+  <text x="325" y="816" text-anchor="middle" class="tab" fill="#8E8E93">Settings</text>
+
+  <rect x="128" y="830" width="134" height="5" rx="2.5" fill="#000"/>
+</svg>

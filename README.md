@@ -1,6 +1,13 @@
 # TimeTracker
 
-<img src="TimeTracker/Assets.xcassets/AppIcon.appiconset/AppIcon.png" width="96" alt="TimeTracker app icon">
+<p align="center">
+  <img src="TimeTracker/Assets.xcassets/AppIcon.appiconset/AppIcon.png" width="88" alt="TimeTracker app icon">
+</p>
+
+<p align="center">
+  <img src="docs/assets/today.png" width="220" alt="Today screen">
+  <img src="docs/assets/history.png" width="220" alt="History screen">
+</p>
 
 A small iPhone app for the hours your badge terminal records but never shows you.
 
@@ -10,6 +17,8 @@ never does: **today's balance** and **what time you can leave**.
 
 Everything is local: one append-only text file on the phone. No account, no
 server, no network.
+
+**Website:** <https://dovidio.github.io/time-tracking/>
 
 ## Requirements
 
@@ -121,7 +130,7 @@ cd TimeCore && swift test
 36 tests cover parsing, undo, the toggle, lunch deduction, overrides, balances
 and rounding.
 
-Release checklist: [docs/APPSTORE.md](docs/APPSTORE.md).
+Release checklist: [APPSTORE.md](APPSTORE.md).
 
 ## License
 

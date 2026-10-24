@@ -60,7 +60,7 @@ App Store Connect → **My Apps → + → New App**:
 - **Content rights**: does not contain third-party content
 - **Age rating**: 4+
 - **Privacy policy URL**:
-  `https://github.com/dovidio/time-tracking/blob/main/PRIVACY.md`
+  `https://dovidio.github.io/time-tracking/privacy.html`
   (a GitHub Pages URL is nicer if you want one later)
 - **Support URL**: `https://github.com/dovidio/time-tracking/issues`
 - **Copyright**: `2026 Umberto D'Ovidio`

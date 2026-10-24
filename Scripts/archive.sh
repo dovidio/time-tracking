@@ -2,7 +2,7 @@
 #
 # Archive and export a Release build for the App Store.
 #
-# Prerequisites (see docs/APPSTORE.md):
+# Prerequisites (see APPSTORE.md):
 #   - Paid Apple Developer Program membership
 #   - Apple Distribution certificate in the keychain
 #   - App record created in App Store Connect
