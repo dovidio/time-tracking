@@ -47,8 +47,14 @@ App Store Connect → **My Apps → + → New App**:
 | Name | TimeTrackete |
 | Primary language | English |
 | Bundle ID | `com.umbertodovidio.TimeTracker` (must match the app) |
-| SKU | `timetracker-ios` (any private string) |
+| SKU | `timetrackete-ios-2026` (private, unique; never shown on the store) |
 | User access | Full Access |
+
+The SKU is internal. It must be unique within your developer account, but it is
+not the app name and never appears on the store. If Xcode Cloud's automatic
+record creation fails because a SKU is already taken, create the record here
+manually first and then select it in Xcode Cloud. If an app record already
+exists for this bundle ID, use that record instead of creating a second one.
 
 ## 4. App information
 
