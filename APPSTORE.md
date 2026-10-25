@@ -85,6 +85,34 @@ As a fallback, export a signed `.ipa` and upload it with **Transporter** (free
 from the Mac App Store). It uploads to an existing record without ever trying to
 create one.
 
+### "The app name you entered is already being used for another app"
+
+Xcode matches app records by **bundle ID**, not by the name shown in App Store
+Connect. If it is trying to create a new record, the archive's bundle ID was not
+found — even though a record with that name exists. Usually one of:
+
+- the record was created with a different bundle ID (for example
+  `com.umbertodovidio.TimeTrackete` instead of `com.umbertodovidio.TimeTracker`),
+  or
+- the record lives in a different team/account than the one selected in Xcode.
+
+Check, exactly and case-sensitively:
+
+1. App Store Connect → your app → **App Information → Bundle ID**
+2. Xcode → **TimeTracker** target → **General → Bundle Identifier**
+
+They must be identical.
+
+If the record has the wrong bundle ID and no builds yet, **remove the record**
+(App Information → Remove App) and create a new one with the correct bundle ID
+and the name you want. Do **not** change the Xcode bundle ID to match the wrong
+record: that creates a new app container on the phone and orphans the existing
+log.
+
+If the bundle IDs already match, switch Xcode to the team that owns the record
+(Settings → Accounts), sign out and back in, and upload with **Transporter** to
+bypass Xcode's record-creation step entirely.
+
 ## 4. App information
 
 - **Subtitle** (30 chars): `Know when you can leave.`
