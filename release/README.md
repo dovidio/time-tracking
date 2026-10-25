@@ -41,8 +41,8 @@ wired in `docs/index.html`).
 
 | File | Field |
 |---|---|
-| `name.txt` | App name (proposal: **Badge Hours**) |
-| `name-options.md` | Alternatives, since `TimeTracker` is taken |
+| `name.txt` | App name: **TimeTrackete** |
+| `name-options.md` | Why the store name is TimeTrackete |
 | `subtitle.txt` | Subtitle (30 chars max) |
 | `promotional_text.txt` | Promotional text (170 chars max) |
 | `description.txt` | Description |

@@ -1,1 +1,1 @@
-Badge Hours is a private hours ledger for people whose badge terminal records time but never shows a balance. Test the stamp toggle, the day editor, the standard-lunch setting, and the Back Tap Shortcut. It stores everything locally; there is no account.
+TimeTrackete is a private hours ledger for people whose badge terminal records time but never shows a balance. Test the stamp toggle, the day editor, the standard-lunch setting, and the Back Tap Shortcut. It stores everything locally; there is no account.

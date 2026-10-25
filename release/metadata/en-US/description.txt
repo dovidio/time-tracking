@@ -11,4 +11,4 @@ One tap logs a stamp. The app mirrors the terminal's in/out toggle, so four taps
 
 No account, no ads, no analytics, no network.
 
-TimeTracker is an independent project and is not affiliated with any badge or terminal vendor.
+TimeTrackete is an independent project and is not affiliated with any badge or terminal vendor.

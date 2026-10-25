@@ -14,7 +14,7 @@
   <rect width="1280" height="640" fill="url(#bg)"/>
   <rect width="1280" height="640" fill="url(#glow)"/>
 
-  <text x="220" y="158" font-family="Helvetica Neue, Helvetica, Arial, sans-serif" font-size="58" font-weight="700" letter-spacing="-1.5" fill="#FFFFFF">TimeTracker</text>
+  <text x="220" y="158" font-family="Helvetica Neue, Helvetica, Arial, sans-serif" font-size="58" font-weight="700" letter-spacing="-1.5" fill="#FFFFFF">TimeTrackete</text>
   <text x="80" y="248" font-family="Helvetica Neue, Helvetica, Arial, sans-serif" font-size="32" font-weight="600" fill="#D9E4FF">Know when you can leave.</text>
   <text x="80" y="290" font-family="Helvetica Neue, Helvetica, Arial, sans-serif" font-size="19" fill="#9FB4E6">A private hours ledger for badge terminals.</text>
 

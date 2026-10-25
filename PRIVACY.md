@@ -1,6 +1,6 @@
 # Privacy Policy
 
-TimeTracker does not collect, transmit, sell, or share any personal data.
+TimeTrackete does not collect, transmit, sell, or share any personal data.
 
 - All time entries, settings and corrections are stored locally on your device,
   in a plain-text file (`taps.log`) inside the app's Documents directory.

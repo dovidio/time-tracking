@@ -23,7 +23,7 @@ targets:
     info:
       path: TimeTracker/Info.plist
       properties:
-        CFBundleDisplayName: TimeTracker
+        CFBundleDisplayName: TimeTrackete
         CFBundleShortVersionString: $(MARKETING_VERSION)
         CFBundleVersion: $(CURRENT_PROJECT_VERSION)
         LSRequiresIPhoneOS: true

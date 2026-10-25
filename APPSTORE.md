@@ -1,6 +1,6 @@
 # Shipping to the App Store
 
-A checklist for putting TimeTracker on the App Store. Nothing here is code —
+A checklist for putting TimeTrackete on the App Store. Nothing here is code —
 it is account setup, metadata, screenshots, and review.
 
 ## 0. Before you start
@@ -15,20 +15,14 @@ it is account setup, metadata, screenshots, and review.
 
 ## 1. The name
 
-**`TimeTracker` is already taken on the App Store** (by ExhibitForce). The name
-in App Store Connect must be unique, but the name on the home screen does not:
-`CFBundleDisplayName` can stay `TimeTracker`.
+The App Store name is **TimeTrackete**. `TimeTracker` was already registered by
+ExhibitForce, so the listing uses the unique spelling. The home-screen name
+matches (`CFBundleDisplayName`).
 
-The proposal is **Badge Hours**; alternatives and the reasoning are in
-[`release/metadata/en-US/name-options.md`](release/metadata/en-US/name-options.md):
-
-- `Badge Hours`
-- `Punch Ledger`
-- `Hours Ledger`
-- `Badge Hours: Time Ledger`
-
-App Store Connect will tell you immediately if a name is free when you create the
-app record; it also reserves the name for 90 days once you do.
+The bundle ID, the Xcode project and the repository keep the internal name
+`TimeTracker` / `time-tracking`. Those are not user-visible, and changing the
+bundle ID would create a new app container and orphan the existing log on the
+phone.
 
 ## 2. Already done in this repo
 
@@ -50,7 +44,7 @@ App Store Connect → **My Apps → + → New App**:
 | Field | Value |
 |---|---|
 | Platform | iOS |
-| Name | your unique name (see above) |
+| Name | TimeTrackete |
 | Primary language | English |
 | Bundle ID | `com.umbertodovidio.TimeTracker` (must match the app) |
 | SKU | `timetracker-ios` (any private string) |
@@ -173,9 +167,10 @@ Review Notes**:
   mirroring a badge terminal's toggle, leave-at projection and editable ledger —
   helps. If it is rejected, adding a **Lock Screen / Home Screen widget** is the
   strongest answer, and it is the natural next feature anyway.
-- **Name.** `TimeTracker` is taken; use a unique store name.
-- **Screenshots.** Without the iOS simulator runtime you cannot produce the
-  required 6.9-inch set. Install it from Xcode → Settings → Components.
+- **Name.** The store name is `TimeTrackete`, because `TimeTracker` is taken; the bundle ID and project name stay unchanged.
+- **Screenshots.** The prepared set is interface renders. Real captures from a
+  6.9-inch device or simulator are preferred; install the iOS runtime from
+  Xcode → Settings → Components if you need one.
 - **Free app, no IAP.** Nothing to configure under In-App Purchases.
 
 ## 12. Final checklist

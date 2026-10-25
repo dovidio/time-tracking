@@ -1,7 +1,7 @@
-# TimeTracker
+# TimeTrackete
 
 <p align="center">
-  <img src="TimeTracker/Assets.xcassets/AppIcon.appiconset/AppIcon.png" width="88" alt="TimeTracker app icon">
+  <img src="TimeTracker/Assets.xcassets/AppIcon.appiconset/AppIcon.png" width="88" alt="TimeTrackete app icon">
 </p>
 
 <p align="center">
@@ -72,26 +72,26 @@ Open **Settings** in the app and set:
 iOS only lets **Back Tap run a Shortcut**, never an app action directly. The
 minimum is a one-action shortcut — that is the whole setup.
 
-1. **Launch TimeTracker once.** App Intents register on first launch; before that
+1. **Launch TimeTrackete once.** App Intents register on first launch; before that
    the action will not appear in Shortcuts.
-2. Open **Shortcuts → +** and add the action **TimeTracker → Stamp**. Delete
+2. Open **Shortcuts → +** and add the action **TimeTrackete → Stamp**. Delete
    everything else; the action timestamps itself.
 3. Name the shortcut **Stamp**.
 4. Go to **Settings → Accessibility → Touch → Back Tap → Double Tap** and pick
    **Stamp**.
 5. *(Optional)* Create a second one-action shortcut with **Undo last stamp** and
    assign it to **Triple Tap**.
-6. *(Optional)* Siri: **“Stamp with TimeTracker”**.
+6. *(Optional)* Siri: **“Stamp with TimeTrackete”**.
 
 Now double-tapping the back of the phone records a stamp. The app does not need
 to be open, and it works with the phone locked after the first unlock since boot.
 
-TimeTracker's own big button does exactly the same thing, for when the app is
+TimeTrackete's own big button does exactly the same thing, for when the app is
 already open.
 
 ## The log
 
-`taps.log` lives in **Files → On My iPhone → TimeTracker** and can be exported
+`taps.log` lives in **Files → On My iPhone → TimeTrackete** and can be exported
 from Settings. It is append-only — nothing is ever rewritten or deleted:
 
 ```
