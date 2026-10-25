@@ -41,6 +41,24 @@ or adjusted.
 `release/icon/AppIcon-1024.png` — the App Store icon is taken from the build's
 asset catalog, so this copy is for records and marketing only.
 
+## Product page header (optional)
+
+```
+release/header/
+  header-21x9-3840x1646.png   21:9  (preferred)
+  header-16x9-5244x2950.png   16:9  (also accepted as a 16:9 search result asset)
+```
+
+The header is the new **Asset Library** slot at the top of the product page
+(iOS/iPadOS 27+). It is optional and does not replace screenshots.
+
+- No transparency; both files are flattened PNGs.
+- Apple does not publish crop-safe margins: keep the subject inside the central
+  ~80%, because the outer 10% on each side may be cropped on some devices.
+- One idea, readable in a second. No prices, rankings, awards or "Download"
+  buttons — the store already provides those.
+- A 5–30 second looping video is also accepted at 21:9; not included here.
+
 ## Social card
 
 `release/social-card.png` — 1280 × 640. Use it as the GitHub repository's

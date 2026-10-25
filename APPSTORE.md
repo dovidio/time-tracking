@@ -92,6 +92,28 @@ can capture the four screens on the real device, use those instead.
 
 App Preview videos (886 × 1920 / 1920 × 886) are optional and not included.
 
+## 6b. Product page header (optional)
+
+A new **Asset Library** slot, shown at the top of the product page on
+iOS/iPadOS 27 and later. It is optional and does not replace screenshots.
+
+App Store Connect accepts:
+
+| Ratio | Size | Format |
+|---|---|---|
+| 21:9 | 3840 × 1646 | PNG, JPEG |
+| 16:9 | 5244 × 2950 | PNG |
+
+Prepared in `release/header/`:
+
+- `header-21x9-3840x1646.png` — preferred
+- `header-16x9-5244x2950.png` — also accepted for the 16:9 search result slot
+
+No transparency. Keep the subject inside the central ~80%; the outer 10% may be
+cropped on some devices. A 5–30 s looping video is allowed at 21:9 but not
+included. One idea, readable at a glance; no prices, rankings or download
+buttons in the art.
+
 ## 7. Version information
 
 All strings are in `release/metadata/en-US/`; paste each file into the matching

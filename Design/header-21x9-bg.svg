@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="3840" height="1646" viewBox="0 0 3840 1646">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#0B1220"/>
+      <stop offset="0.55" stop-color="#142C6E"/>
+      <stop offset="1" stop-color="#1D4ED8"/>
+    </linearGradient>
+    <radialGradient id="glow" cx="0.2" cy="0.1" r="0.8">
+      <stop offset="0" stop-color="#FFFFFF" stop-opacity="0.14"/>
+      <stop offset="1" stop-color="#FFFFFF" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+
+  <rect width="3840" height="1646" fill="url(#bg)"/>
+  <rect width="3840" height="1646" fill="url(#glow)"/>
+
+  <text x="700" y="700" font-family="Helvetica Neue, Helvetica, Arial, sans-serif" font-size="110" font-weight="700" letter-spacing="-3" fill="#FFFFFF">TimeTrackete</text>
+  <text x="420" y="990" font-family="Helvetica Neue, Helvetica, Arial, sans-serif" font-size="60" font-weight="600" fill="#D9E4FF">Know when you can leave.</text>
+  <text x="420" y="1060" font-family="Helvetica Neue, Helvetica, Arial, sans-serif" font-size="34" fill="#9FB4E6">A private hours ledger for badge terminals.</text>
+
+  <rect x="2828" y="152" width="620" height="1340" rx="70" fill="#000000" fill-opacity="0.28"/>
+</svg>

@@ -13,7 +13,7 @@ TMP="$(mktemp -d)"
 trap 'rm -rf "$TMP"' EXIT
 
 mkdir -p docs/assets
-mkdir -p release/screenshots/6.1-inch release/screenshots/6.3-inch release/screenshots/6.5-inch release/screenshots/6.9-inch
+mkdir -p release/screenshots/6.1-inch release/screenshots/6.3-inch release/screenshots/6.5-inch release/screenshots/6.9-inch release/header
 mkdir -p release/icon
 
 render() {
@@ -57,5 +57,35 @@ magick "$TMP/bg.png" \
 magick docs/assets/social-card.png -background white -alpha remove -alpha off docs/assets/social-card.png
 cp docs/assets/social-card.png release/social-card.png
 
+echo "==> Product page headers"
+
+rounded() {
+  local src="$1" width="$2" height="$3" radius="$4" out="$5"
+  magick -size "${width}x${height}" xc:none -fill white \
+    -draw "roundrectangle 0,0 $(($width - 1)),$(($height - 1)) $radius,$radius" "$TMP/mask.png"
+  magick "$src" -resize "${width}x${height}!" "$TMP/img.png"
+  magick "$TMP/img.png" "$TMP/mask.png" -alpha off -compose CopyOpacity -composite "$out"
+}
+
+# 21:9, 3840 x 1646
+rsvg-convert -w 3840 -h 1646 Design/header-21x9-bg.svg -o "$TMP/h21.png"
+rounded docs/assets/icon.png 220 220 50 "$TMP/h21-icon.png"
+rounded docs/assets/today.png 620 1340 70 "$TMP/h21-phone.png"
+magick "$TMP/h21.png" \
+  "$TMP/h21-icon.png" -geometry +420+540 -composite \
+  "$TMP/h21-phone.png" -geometry +2820+140 -composite \
+  -stroke '#FFFFFF2E' -strokewidth 2 -fill none -draw "roundrectangle 2820,140 3440,1480 70,70" \
+  -background white -alpha remove -alpha off release/header/header-21x9-3840x1646.png
+
+# 16:9, 5244 x 2950
+rsvg-convert -w 5244 -h 2950 Design/header-16x9-bg.svg -o "$TMP/h169.png"
+rounded docs/assets/icon.png 320 320 72 "$TMP/h169-icon.png"
+rounded docs/assets/today.png 1050 2275 120 "$TMP/h169-phone.png"
+magick "$TMP/h169.png" \
+  "$TMP/h169-icon.png" -geometry +600+1000 -composite \
+  "$TMP/h169-phone.png" -geometry +3650+337 -composite \
+  -stroke '#FFFFFF2E' -strokewidth 3 -fill none -draw "roundrectangle 3650,337 4700,2612 120,120" \
+  -background white -alpha remove -alpha off release/header/header-16x9-5244x2950.png
+
 echo "==> Done"
-magick identify release/screenshots/*/*.png release/social-card.png release/icon/AppIcon-1024.png
+magick identify release/screenshots/*/*.png release/header/*.png release/social-card.png release/icon/AppIcon-1024.png
