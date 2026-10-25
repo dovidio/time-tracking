@@ -13,7 +13,7 @@ TMP="$(mktemp -d)"
 trap 'rm -rf "$TMP"' EXIT
 
 mkdir -p docs/assets
-mkdir -p release/screenshots/6.9-inch release/screenshots/6.5-inch
+mkdir -p release/screenshots/6.1-inch release/screenshots/6.3-inch release/screenshots/6.5-inch release/screenshots/6.9-inch
 mkdir -p release/icon
 
 render() {
@@ -28,6 +28,8 @@ for pair in today:01-today history:02-history day-editor:03-day-editor settings:
   src="${pair%%:*}"
   dst="${pair##*:}"
   render "Design/screens/$src.svg" "docs/assets/$src.png" 1170 2532
+  render "Design/screens/$src.svg" "release/screenshots/6.1-inch/$dst.png" 1179 2556
+  render "Design/screens/$src.svg" "release/screenshots/6.3-inch/$dst.png" 1206 2622
   render "Design/screens/$src.svg" "release/screenshots/6.5-inch/$dst.png" 1284 2778
   render "Design/screens/$src.svg" "release/screenshots/6.9-inch/$dst.png" 1320 2868
 done
@@ -56,4 +58,4 @@ magick docs/assets/social-card.png -background white -alpha remove -alpha off do
 cp docs/assets/social-card.png release/social-card.png
 
 echo "==> Done"
-magick identify release/screenshots/6.9-inch/*.png release/screenshots/6.5-inch/*.png release/social-card.png release/icon/AppIcon-1024.png
+magick identify release/screenshots/*/*.png release/social-card.png release/icon/AppIcon-1024.png

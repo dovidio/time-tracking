@@ -10,13 +10,25 @@ Scripts/render-assets.sh
 
 ```
 release/screenshots/
-  6.9-inch/   01-today.png  02-history.png  03-day-editor.png  04-settings.png
-  6.5-inch/   same four, optional
+  6.1-inch/   01-today.png  02-history.png  03-day-editor.png  04-settings.png
+  6.3-inch/   same four
+  6.5-inch/   same four (older slot)
+  6.9-inch/   same four
 ```
 
-- **6.9-inch** is 1320 × 2868 and is the set App Store Connect requires.
-- **6.5-inch** is 1284 × 2778 and is optional once the 6.9-inch set exists.
-- Upload in numeric order. Files are flattened PNGs with no alpha channel.
+The upload slot in App Store Connect decides which set to use. The current
+dialog lists:
+
+| Slot | Size |
+|---|---|
+| iPhone 6.1-inch | 1179 × 2556 |
+| iPhone 6.3-inch | 1206 × 2622 |
+| iPhone 6.5-inch (older) | 1284 × 2778 |
+| iPhone 6.9-inch | 1320 × 2868 |
+
+Upload the four files from the folder matching the slot, in numeric order.
+Files are flattened PNGs with no alpha channel. App Preview videos
+(886 × 1920 / 1920 × 886) are optional and not included.
 
 These are **interface renders** from `Design/screens/*.svg`, not simulator
 captures. They follow the app's real layout, but Apple expects screenshots of

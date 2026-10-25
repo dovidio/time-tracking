@@ -69,20 +69,28 @@ network requests. No tracking. No third-party SDKs, so no SDK manifests.
 
 ## 6. Screenshots
 
-Apple requires the **6.9-inch** set (1320 × 2868); the 6.5-inch set (1284 ×
-2778) is optional.
+The upload slot decides the size; App Store Connect currently lists:
 
-Prepared in `release/screenshots/`:
+| Slot | Size |
+|---|---|
+| iPhone 6.1-inch | 1179 × 2556 |
+| iPhone 6.3-inch | 1206 × 2622 |
+| iPhone 6.5-inch (older) | 1284 × 2778 |
+| iPhone 6.9-inch | 1320 × 2868 |
 
-1. `6.9-inch/01-today.png` — worked time, progress ring, leave time.
-2. `6.9-inch/02-history.png` — week and month balances.
-3. `6.9-inch/03-day-editor.png` — correcting a day.
-4. `6.9-inch/04-settings.png` — contract, rounding, lunch.
+Prepared in `release/screenshots/`, four images per slot:
 
-Upload in numeric order. These are **interface renders** from `Design/screens/`,
-not simulator captures. They follow the app's layout, but Apple wants screenshots
-of the running app — if you can capture the four screens on a 6.9-inch device or
-simulator, use those instead.
+1. `01-today.png` — worked time, progress ring, leave time.
+2. `02-history.png` — week and month balances.
+3. `03-day-editor.png` — correcting a day.
+4. `04-settings.png` — contract, rounding, lunch.
+
+Upload the four from the folder that matches the slot, in numeric order. These
+are **interface renders** from `Design/screens/`, not simulator captures. They
+follow the app's layout, but Apple wants screenshots of the running app — if you
+can capture the four screens on the real device, use those instead.
+
+App Preview videos (886 × 1920 / 1920 × 886) are optional and not included.
 
 ## 7. Version information
 
