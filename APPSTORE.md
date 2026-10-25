@@ -56,6 +56,35 @@ record creation fails because a SKU is already taken, create the record here
 manually first and then select it in Xcode Cloud. If an app record already
 exists for this bundle ID, use that record instead of creating a second one.
 
+### If Xcode or Xcode Cloud fails with a permission error
+
+`App Record Creation failed as you do not have permission to perform requests of
+this type` means Xcode was trying to create the record on your behalf and your
+account was not allowed to. Don't fight it — create the record manually first:
+
+1. Go to [App Store Connect](https://appstoreconnect.apple.com) → **My Apps → + →
+   New App** and fill in the table above.
+2. If the bundle ID isn't in the dropdown, register it first under
+   **Certificates, Identifiers & Profiles → Identifiers**, or let Xcode's
+   automatic signing create it.
+3. Once the record exists, archive and upload from Xcode Organizer (or Xcode
+   Cloud). It will attach to the existing record instead of creating one.
+
+If the web UI also refuses to create an app:
+
+- Your Apple ID needs the **Admin** or **App Manager** role
+  (Users and Access → your user → Role). The Account Holder can change it.
+- The **paid** Apple Developer Program must be active for that team; free
+  personal teams cannot use App Store Connect.
+- If you use an App Store Connect **API key** (Integrations), its role must be
+  **App Manager**, not Developer.
+- In **Xcode → Settings → Accounts**, remove any Apple ID that is not the team
+  you are uploading to. Xcode has been known to pick the wrong account.
+
+As a fallback, export a signed `.ipa` and upload it with **Transporter** (free
+from the Mac App Store). It uploads to an existing record without ever trying to
+create one.
+
 ## 4. App information
 
 - **Subtitle** (30 chars): `Know when you can leave.`
