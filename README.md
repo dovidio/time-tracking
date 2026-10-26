@@ -18,6 +18,9 @@ never does: **today's balance** and **what time you can leave**.
 Everything is local: one append-only text file on the phone. No account, no
 server, no network.
 
+I punched in with a badge at work, and nothing told me how much overtime I'd
+accumulated.
+
 **Website:** <https://dovidio.github.io/time-tracking/>
 
 ## Requirements

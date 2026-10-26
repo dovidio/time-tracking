@@ -1,3 +1,15 @@
-No account or login. Tap the large button to record a stamp; tap again to toggle out. The pencil button edits a day. Settings configures weekly hours, working days and the standard lunch.
+TimeTrackete is a local, single-user time ledger. No accounts, no login, no account deletion, no user-generated content, no paid content, no network access.
 
-The app is an independent personal ledger. It does not connect to any employer system or badge hardware. The "Stamp" App Intent can be added to a Shortcut for Back Tap.
+Purpose: for employees whose badge terminal records time but does not show a balance. It is a personal ledger, not a connection to any employer system or hardware.
+
+Setup: no credentials or sample files. Open the app; Settings sets weekly hours, working days, optional standard lunch, rounding and holidays. The large button records stamps (1 in, 2 out, 3 back, 4 out); the pencil edits a day; History shows balances.
+
+Screen recording (physical iPhone, latest iOS, starts at app launch): [PASTE LINK]
+
+External services: none. Only Apple frameworks (SwiftUI, Foundation, App Intents). All data is stored locally in taps.log and the app makes no network requests.
+
+Regional differences: none.
+
+Regulated industry or protected third-party material: not applicable.
+
+Full details: see the Resolution Center reply.

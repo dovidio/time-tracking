@@ -82,6 +82,8 @@ wired in `docs/index.html`).
 | `privacy_url.txt` | Privacy policy URL |
 | `release_notes.txt` | What's New |
 | `review_notes.txt` | App Review notes |
+| `review-reply.md` | Full reply to a Guideline 2.1 information request |
+| `screen-recording-script.md` | Shot list for the App Review screen recording |
 | `what_to_test.txt` | TestFlight "What to Test" |
 | `beta_description.txt` | TestFlight beta app description |
 | `feedback_email.txt` | TestFlight feedback email |

@@ -253,6 +253,20 @@ Review Notes**:
 > system or badge hardware. The "Stamp" App Intent can be added to a Shortcut
 > for Back Tap.
 
+## 10b. If review asks for more information (Guideline 2.1)
+
+A 2.1 rejection is usually a request for context, not a code problem. Reply in
+**App Store Connect → Resolution Center** and paste the same text into **App
+Review Information → Notes**.
+
+- Full reply draft: [`release/metadata/en-US/review-reply.md`](release/metadata/en-US/review-reply.md)
+- Recording shot list: [`release/metadata/en-US/screen-recording-script.md`](release/metadata/en-US/screen-recording-script.md)
+
+The only thing you must produce is a **screen recording on a physical device,
+starting with launching the app**. Upload it unlisted (Google Drive, YouTube,
+Dropbox), put the link in both places, and continue the review. No new build is
+needed unless the reviewer asks for one.
+
 ## 11. Risks worth knowing
 
 - **Guideline 4.2 (minimum functionality).** This is a focused utility, and
